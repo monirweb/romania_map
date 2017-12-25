@@ -1,0 +1,36 @@
+# Romania map,finding paths between cities
+
+This program finds all possible paths from one node to another and gives all information about graph(the whole country),like
+vertices and edges with weights(which is distance from one city to another).
+Also gets node number as the source node and computes all distances from all nodes to the source(sum of weights),using Dijkstra's algorithm.
+Other things are traversing graph using BFS and DFS algorithm.
+
+![Romania map](https://github.com/monirweb/romania_map/raw/master/map.png?raw=true "Romania map,nodes,edges,weights and nodes number")
+
+
+## Java classes
+
+The `Vertex` class contains the name of vertices(cities) as a string.
+ 
+The `Edge` class contains the start node number as `int` and end node number also as `int` and weight of edge as `double`.Each node has a special number to set connection between node islands! which is shown in the map image.
+ 
+The `Graph` class creates the whole graph connecting nodes to edges and adding node or edge to the graph.
+ 
+The `WeightedGraph` is subclass of Graph.It contains BFS and DFS algorithm and Inner class `Short`.
+ 
+`ShortestPath` class is for Dijkstra's algorithm.
+ 
+`AllPath` class is used to find all paths from one node to another.
+ 
+`Test` class contains `main` method and graphics using javafx.(This class is not that optimized I know!).
+ 
+
+### 
+
+### Prerequisites
+
+This code is in java so you should have JDK and JRE installed to compile and run this program.
+
+## Authors
+
+* **MonirAyati**[monirweb](https://github.com/monirweb)
